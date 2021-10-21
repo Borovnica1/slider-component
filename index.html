@@ -8,23 +8,49 @@
   
   <title>Insert Title Here</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <img class="background" src="images/bg-pattern.svg" alt="Background image">
 
-  Pageviews
-  $ /month
+  <div class="container">
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <h3>Sign-up for our 30-day trial. No credit card required.</h3>
+      <img src="images/pattern-circles.svg" alt="Circles image">
+    </header>
+    <article>
+      <main class="article__main">
+        <div class="article__views-price">
+          <h3 class="pageviews-text">100k pageviews</h3>
+          <h3><span class="price-text">$16.00</span> / month</h3>
+          <input class="article__slider" type="range" name="slider" id="slider" min="1" max="5" value="3">
+        </div>
+        <div class="article__billing">
+          <h4>Monthly Billing</h4>
+          <div class="btn-slider"><div class="btn-slider-circle"></div></div>
+          <h4>Yearly Billing</h4>
+          <h5 class="discount-text">25% discount</h5>
+        </div>
+      </main>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+      <div class="horizontal-line"></div>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+      <div class="article__about">
+        <ul class="article__perks">
+          <li><img src="images/icon-check.svg" alt="Check icon"><h4>Unlimited websites</h4></li>
+          <li><img src="images/icon-check.svg" alt="Check icon"><h4>100% data ownership</h4></li>
+          <li><img src="images/icon-check.svg" alt="Check icon"><h4>Email reports</h4></li>
+        </ul>
+        <button class="btn btn-primary">Start my trial</button>
+      </div>
+    </article>
+  </div>
 
-  Start my trial
+  <script src="script.js"></script>
 </body>
 </html>
