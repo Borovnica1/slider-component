@@ -20,7 +20,7 @@ function updatePriceAndViews() {
   if (btnSlider.classList.contains('btn-slider--active')) {
     discount = .75;
   }
-  priceText.textContent = `$${pricesPerMonthArr[this.value-1]*discount},00`;
+  priceText.textContent = `$${pricesPerMonthArr[this.value-1]*discount}.00`;
   if (this.value == 5) {
     pageViewsEl.textContent = `${pageViewsArr[this.value-1]}m pageviews`;
   } else {
